@@ -20,5 +20,6 @@ ZSH_THEME_RUBY_PROMPT_PREFIX="%{$fg[red]%}["
 ZSH_THEME_RUBY_PROMPT_SUFFIX="]%{$reset_color%}"
 
 # Combine it all into a final right-side prompt
+dvc=${DEVICE_NAME:-`hostname`}
 RPS1="\$(git_custom_status)\$(ruby_prompt_info)${RPS1:+ $RPS1}"
-PROMPT='%{$fg[green]%}[%n%F{yellow}@%F{green}wsl|%F{white}%~% %F{green}]%f%(?.%{$fg[white]%}.%{$fg[red]%})%B$%b '
+PROMPT='%{$fg[green]%}[%n%F{yellow}@%F{green}$dvc|%F{white}%~% %F{green}]%f%(?.%{$fg[white]%}.%{$fg[red]%})%B$%b '
