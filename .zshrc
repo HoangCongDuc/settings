@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias tm="tmux new -s"
 alias tma="tmux a -t"
+alias rs="rsync -avzP --inplace"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 bindkey -v
