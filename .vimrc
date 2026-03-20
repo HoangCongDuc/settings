@@ -28,3 +28,7 @@ Plug 'tpope/vim-surround'
 call plug#end()
 
 set iskeyword-=_
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
